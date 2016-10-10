@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+	<style>
+	.ripple-element {
+	    position: absolute;
+	    background: hsla(0, 0%, 78%, .6);
+	    width: 10px;
+	    height: 10px;
+	    border-radius: 100%;
+	    box-sizing: border-box;
+	    opacity: 1;
+	    -webkit-transform: scale(0);
+	    transform: scale(0)
+	}
+
+	.ripple-element._animate {
+	    -webkit-animation: _2v7cSV .25s ease-out;
+	    animation: _2v7cSV .25s ease-out
+	}
+
+	@-webkit-keyframes _2v7cSV {
+	    0% {
+	        -webkit-transform: scale(0);
+	        transform: scale(0)
+	    }
+	    to {
+	        opacity: 0;
+	        -webkit-transform: scale(1.5);
+	        transform: scale(1.5)
+	    }
+	}
+
+	@keyframes _2v7cSV {
+	    0% {
+	        -webkit-transform: scale(0);
+	        transform: scale(0)
+	    }
+	    to {
+	        opacity: 0;
+	        -webkit-transform: scale(1.5);
+	        transform: scale(1.5)
+	    }
+	}
+
+	</style>
+  </head>
+  <body>
+      <div id='app'></div>
+  </body>
+</html>
